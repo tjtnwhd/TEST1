@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=yes, minimum-scale=0.5,maximum-scale=3.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/login-style-TEST.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <title>뉴마커스</title>
+  </head>
+  <body>
+    <header>
+      <section class="site-top">
+        <div class="left">
+          <a href="#">
+            <i class="xi-bars"></i>
+          </a>g
+          <a href="#">
+            <i class="xi-search"></i>
+          </a>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="로고" />
+        </a>
+
+        <div class="right">
+          <a href="#">
+            <i class="xi-user-o"></i>
+          </a>
+          <a href="#">
+            <i class="xi-cart-o"></i>
+          </a>
+        </div>
+      </section>
+      <div class="page_location">
+        <div class="back" onclick="history.back()"></div>
+        회원로그인
+      </div>
+    </header>
+    <div id="container">
+      <div id="contents_wrap">
+        <div class="login">
+          <div class="login_box">
+            <form id="formLogin" name="login form" action="#"></form>
+            <fieldset>
+              <legend>회원로그인</legend>
+              <input
+                type="text"
+                id="loginld"
+                name="loginld"
+                value
+                placeholder="아이디"
+              />
+              <input
+                type="password"
+                id="loginPwd"
+                name="loginPwd"
+                placeholder="비밀번호"
+              />
+              <div class="inp_chk">
+                <input
+                  type="checkbox"
+                  name="saveAutoLogin"
+                  value="y"
+                  id="saveAutoLogin"
+                />
+                <label for="saveAutoLogin" class>로그인 유지</label>
+                <input type="checkbox" id="saveld" name="saveld" value="y" />
+                <label for="saveld" class>아이디 저장</label>
+              </div>
+              <div class="submit">
+                <button
+                  type="submit"
+                  class="member_login_order_btn member_login_btn"
+                >
+                  로그인
+                </button>
+              </div>
+            </fieldset>
+
+          </form>
+            <ul class="login_find">
+              <li>
+                <a href="#">회원가입</a>
+              </li>
+              <li>
+                <a href="#">아이디찾기</a>
+              </li>
+              <li>
+                <a href="#">비밀번호찾기</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+/*전체 적용 O*/
+* {
+  color: #000;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/*전체 적용 O*/
+
+/*스타일 초기화E*/
+html {
+  font-size: 13px;
+  background: #f8f8f8;
+}
+body {
+  margin: 0 auto;
+  max-width: 720px;
+  min-width: 360px;
+  background: #fff;
+}
+/*스타일 초기화 E*/
+
+/*공통 스타일 S*/
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-size: 1.538rem;
+  color: #212121;
+  text-align: center;
+  line-height: 1; /* 문장 사이 여백  */
+  padding: 20px;
+}
+
+/*공통 스타일 S*/
+
+/* 헤더 영역 H*/
+
+header .site-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 15px; /* 좌우만 15px */
+}
+
+header .logo img {
+  height: 34px;
+}
+
+header .site-top i {
+  font-size: 2rem; /* 1rm = 13px */
+}
+
+header .site-top .left i {
+  margin-right: 10px;
+}
+
+header .site-top .right i {
+  margin-left: 10px;
+}
+
+header .page_location {
+  border-bottom: 1px solid #e7e7e7;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  line-height: 49px;
+  font-size: 1.53rem;
+  font-weight: 700;
+}
+
+header .page_location .back {
+  background: url(https://m.n-mk.net/data/skin/mobile/moment_C/img/markers/header/back.png)
+    no-repeat center center;
+  width: 44px;
+  height: 30px;
+  position: absolute;
+  background-size: 13px;
+  left: 0;
+  top: 9px;
+  cursor: pointer;
+}
+
+.legend {
+  border: 0;
+  padding: 0;
+}
+
+.login fieldset legend {
+  font-size: 1.307rem;
+  color: #333333;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 19px;
+}
+
+/* 헤더 영역 H*/
+
+/*  로그인 영역 H*/
+
+.login .login_box {
+  padding: 30px 15px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfe1e5;
+  margin-bottom: 10px;
+}
+
+.login .login_box #loginld,
+.login .login_box #loginPwd {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+.login .login_box #loginPwd {
+  margin-bottom: 15px;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0.35em 0.625em 0.75em;
+  padding: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border box;
+  padding: 0;
+}
+
+.inp_chk label {
+  cursor: pointer;
+}
+
+.inp_chk input {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin: -3px 5px 0 0;
+  vertical-align: middle;
+  background: url(https://m.n-mk.net/data/skin/mobile/moment_C/img/markers/common/chk.png)
+    no-repeat center;
+  background-size: 100%;
+  border: none;
+}
+
+.login .login_box .submit {
+  margin-top: 25px;
+}
+
+.login .login_box .inp_chk label {
+  margin-right: 15px;
+  font-size: 0.923rem;
+  color: #212121;
+}
+
+.member_login_order_btn {
+  width: 100%;
+  display: block;
+  height: 45px;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.153rem;
+  font-weight: 700;
+  background-color: #8769f0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+form {
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.login .login_find {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.login .login_find li {
+  position: relative;
+}
+.login_find * {
+  line-height: 1;
+}
+
+.login_find a {
+  color: #212121;
+  font-size: 0.923rem;
+  padding: 0 15px;
+}
+
+.login .login_find li:before {
+  width: 1px;
+  height: 11px;
+  display: block;
+  content: "";
+  background-color: #212121;
+  position: absolute;
+}
+.login .login_find li:first-child:before {
+  display: none;
+}
+
+/*  로그인 영역 H*/
