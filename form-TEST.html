@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <form class="forTEST" name="name">
+      <div>
+        <label for="name">아이디1</label>
+        <!-- 입력란 작성 필수 -->
+        <input type="text" name="name" id="name" aria-valuetext="3" required />
+        <input type="submit" value="제출하기" />
+      </div>
+      <div>
+        <label for="name1">아이디2</label>
+        <!-- 작성불가 읽기만 가능 -->
+        <input type="text" name="name" id="name1" aria-valuetext="3" readonly />
+        <input type="submit" value="제출하기" />
+      </div>
+      <div>
+        <label for="name2">아이디3</label>
+        <!-- 입력란 커서 -->
+        <input
+          type="text"
+          name="name"
+          id="name2"
+          aria-valuetext="3"
+          autofocus
+        />
+        <input type="submit" value="제출하기" />
+      </div>
+      <div>
+        <label for="name">아이디4</label>
+        <!-- 입력란 설명,가이드문구 -->
+        <input
+          type="text"
+          name="name"
+          id="name"
+          aria-valuetext="3"
+          placeholder="입력하시오"
+        />
+        <input type="submit" value="제출하기" />
+      </div>
+
+      <fieldset>
+        <legend>이메일</legend>
+        <ul>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>색상</legend>
+        <ul>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="green">초록</label>
+            <input type="checkbox" id="green" value="green" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="blue">파랑</label>
+            <input type="checkbox" id="blue" value="blue" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="black">검정</label>
+            <input type="checkbox" id="black" value="black" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송</legend>
+        <ul>
+          <li>
+            <label for="free">무료</label>
+            <input type="radio" name="delivery" id="free" value="free" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="pay">유료</label>
+            <input type="radio" name="delivery" id="pay" value="pay" />
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" name="name">제출</button>
+      <button type="reset" name="name">리셋</button>
+    </form>
+  </body>
+</html>
